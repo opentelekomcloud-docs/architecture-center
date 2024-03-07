@@ -1,16 +1,17 @@
 Architecture Center
 ===================
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.
-Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.
+Welcome to the Open Telekom Cloud Architecture Center.
+
+Unlock the full potential of Open Telekom Cloud with our comprehensive collection of resources, best practices,
+and expert guidance material. Whether you're new to the cloud landscape or an experienced professional,
+our Architecture Center is designed to empower you in building robust, reliable, scalable, innovative and cost-efficient
+architectures on Open Telekom Cloud.
 
 .. directive_wrapper::
    :class: container-sbv
 
    .. service_card::
       :service_type: ac
-      :blueprints: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-      :caf: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      :blueprints: A collection of series of best practices, curated by the Open Telekom Cloud engineering and architecture teams.
+      :caf: A framework helping organizations clearly define the plan, strategies, methods, and best practices for their cloud adoption journey.
