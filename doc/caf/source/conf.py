@@ -16,6 +16,8 @@
 
 import os
 import sys
+from git import Repo
+from datetime import datetime
 
 extensions = [
     'otcdocstheme',
@@ -30,7 +32,7 @@ otcdocs_repo_name = 'opentelekomcloud-docs/architecture-center'
 
 # Those variables are needed for indexing into OpenSearch
 otcdocs_doc_environment = 'public'
-otcdocs_doc_link = '/architecture-center/cloud-adoption-framework/'
+otcdocs_doc_link = '/architecture-center/caf/'
 otcdocs_doc_title = 'Cloud Adoption Framework'
 otcdocs_doc_type = 'caf'
 otcdocs_service_category = 'other'
@@ -110,3 +112,9 @@ latex_documents = [
      u'Architecture Center - Cloud Adoption Framework',
      u'OpenTelekomCloud', 'manual'),
 ]
+
+# Get the Git commit values for last updated timestamp on each page
+repo = Repo(search_parent_directories=True)
+commit = repo.head.commit
+current_commit_hash = commit.hexsha
+current_commit_time = commit.committed_datetime.strftime('%Y-%m-%d %H:%M')
